@@ -6,6 +6,7 @@
     <title>Document</title>
 </head>
 <body>
+    <!-- хедер -->
     <header>
         <a href="#">
             <img src="" alt="it-incubator">
@@ -24,7 +25,7 @@
             </ul>
         </nav>
     </header>
-
+    <!-- Первая секция -->
     <section>
         <h1>Markup achievement</h1>
         <p>The harder you work for something, the greater you’ll feel when you achieve it.</p>
@@ -32,11 +33,14 @@
         <img src="" alt="maket">
     </section>
 
+    <!-- Вторая секция, таблица -->
     <section>
         <h2>Rates</h2>
         <p>Failure will never overtake me if my determination to succeed is strong enough.</p>
         <table></table>
     </section>
+
+        <!-- Третья секция, форма -->
 
     <section>
         <h2>Create your free account</h2>
@@ -50,27 +54,48 @@
             <input type="text" placeholder="Full Name*" required>
             <input type="email" placeholder="Email*" required>
             <input type="password" placeholder="Password*" required>
-            <input type="date" placeholder="Date of Birth">
-            <select name="country" id="county">
+            <input type="date">
+            <select name="country">
                 <option selected disabled>County</option>
                 <option value="belarus">Belarus</option>
                 <option value="china">China</option>
                 <option value="usa">USA</option>
             </select>
-            <label><input type="radio" id="it" name="it" value="frontend">Frontend</label>
-            <label><input type="radio" id="it" name="it" value="backend">Backend</label>
+
+            <label>
+                <input type="radio" name="stack" value="frontend" checked>
+                Frontend
+            </label>
+            <label>
+                <input type="radio" name="stack" value="backend">
+                Backend
+            </label>
+
             <fieldset>
                 <legend>Favorite Technologies</legend>
-                <label><input type="checkbox" id="favoriteTechnologies" name="favoriteTechnologies" value="HTML">HTML</label>
-                <label><input type="checkbox" id="favoriteTechnologies" name="favoriteTechnologies" value="CSS">CSS</label>
-                <label><input type="checkbox" id="favoriteTechnologies" name="favoriteTechnologies" value="React">React</label>
-                <label><input type="checkbox" id="favoriteTechnologies" name="favoriteTechnologies" value="Styled components">Styled components</label>
+                <label>
+                    <input type="checkbox" name="favoriteTechnologies" value="HTML" checked>
+                    HTML
+                </label>
+                <label>
+                    <input type="checkbox" name="favoriteTechnologies" value="CSS" checked>
+                    CSS
+                </label>
+                <label>
+                    <input type="checkbox" name="favoriteTechnologies" value="React">
+                    React
+                </label>
+                <label>
+                    <input type="checkbox" name="favoriteTechnologies" value="Styled components">
+                    Styled components
+                </label>
             </fieldset>
-            <textarea name="" id="" placeholder="Something else about you..."></textarea>
-            <button></button>
+            
+            <textarea name="someinfo" placeholder="Something else about you..."></textarea>
+            <button type="submit">Registration</button>
         </form>
     </section>
-
+    <!-- Футер -->
     <footer>
         <small>Copyright © 2023. All rights reserved.</small>
         <!-- <span>Copyright © 2023. All rights reserved.</span> -->
